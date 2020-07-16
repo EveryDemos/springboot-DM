@@ -1,0 +1,13 @@
+server:
+  port: 9001
+spring:
+  datasource:
+    url: jdbc:dm://127.0.0.1:5236
+    username: SYSDBA
+    password: SYSDBA
+    driver-class-name: dm.jdbc.driver.DmDriver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.DmDialect
+    show-sql: true
